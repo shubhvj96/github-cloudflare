@@ -25,6 +25,6 @@ export default {
 		env: Env,
 		ctx: ExecutionContext
 	): Promise<Response> {
-		return new Response("Hello World from CloudFlare and Github!");
+		return new Response("Test commit from CloudFlare and Github!");
 	},
 };
