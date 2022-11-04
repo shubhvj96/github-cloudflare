@@ -9,7 +9,8 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@v1
-      - name: Publish
+      - name: wrangler publish
+        uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           wranglerVersion: '2.1.15'
